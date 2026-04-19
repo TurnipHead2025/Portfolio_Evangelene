@@ -136,6 +136,7 @@ h4 {
     font-family: "Special Elite", system-ui;
     font-weight: 600;
     font-style: normal;
+    text-align: center;
 }
 
 .project-card {
@@ -284,10 +285,7 @@ h4 {
     }
 
     header p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
-    .quote {
-        font-size: 0.85rem;
-    }
 }
