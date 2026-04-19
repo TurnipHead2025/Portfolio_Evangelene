@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangelene Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+NZ+Guides&family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+
+
+<body>
+
+  <div>
+    
+      <header>
+         <h1 class="text-pulse">Sheri Evangelene</h1>
+        <p>Developer. Entrepreneur. Recovering Overachiever.</p>
+      </header>
+
+      <nav></nav>
+
+      <main>
+        <section id="about">
+             <h2 class="special-elite-regular">About</h2>
+    <p class="text">I'm a full-stack developer (recent grad) with a BBA in Marketing (Cum Laude) and a background in entrepreneurship and economic development. After an award-winning career doing everything from developing and operating SMEs to community growth work, I decided to learn how to build things on the internet. Totally into games, design, an AI.</p>
+      <p class="quote"> ~I don't want to move up the ladder, I want to spread out.</p>
+    </p>
+        </section>
+
+        <section id="projects">
+            <h2  class="special-elite-regular">Projects</h2>
+            <div class="project-card">
+                <h3>AiUi</h3>
+                <p class="text">A React chat interface powered by the OpenAI API. Built with React, Vite, Python Flask, and mobile-first CSS. Features a live token counter, conversation memory, and unit tests.</p>
+                <a href="https://github.com/TurnipHead2025/AiUi-Final-Repo" target="_blank">View on GitHub</a>
+             </div>
+
+            <div class="project-card">
+                <h3>LCARS Puzzle — The Mess</h3>
+                <p class="text">A Star Trek-themed reservation puzzle built with HTML, CSS, and JavaScript. Styled as a fully functional LCARS computer terminal, the interface features interactive sound/quote buttons and a hidden logic puzzle — press the right sequence to unlock a reservation form, then complete it in true Starfleet style to beam your booking through.</p>
+                <a href="https://github.com/TurnipHead2025/LCARS-midterm" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+       <section id="skills">
+        <h2  class="special-elite-regular"> Budding Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card" onclick="toggleSkill(this)">
+            <h4>HTML</h4>
+            <p class="skill-details blinking">Semantic HTML5 structure — the foundation of every project I've built.</p>
+          </div>
+
+          <div class="skill-card" onclick="toggleSkill(this)">
+            <h4>CSS</h4>
+            <p class="skill-details blinking">Mobile-first layouts, animations, gradients, flexbox. I actually enjoy CSS.</p>
+          </div>
+
+          <div class="skill-card" onclick="toggleSkill(this)">
+            <h4>JavaScript</h4>
+            <p class="skill-details blinking">DOM manipulation, fetch, async/await, event handling — the fun stuff.</p>
+          </div>
+
+          <div class="skill-card" onclick="toggleSkill(this)">
+            <h4>React</h4>
+            <p class="skill-details blinking">Built a full-stack AI chat app with React + Vite, hooks, and React Router.</p>
+          </div>
+
+          <div class="skill-card" onclick="toggleSkill(this)">
+            <h4>Python</h4>
+            <p class="skill-details">Flask backend for REST APIs, file I/O, and OpenAI API integration.</p>
+          </div>
+
+          <div class="skill-card" onclick="toggleSkill(this)">
+            <h4>Flask</h4>
+            <p class="skill-details">Built and deployed a Python backend with CORS, JSON endpoints, and RAG memory.</p>
+          </div>
+        </div>
+        </section>
+
+        <section id="before-code" >
+          <h2  class="special-elite-regular">Before Code</h2>
+          <div class="history-card" onclick="toggleProject(this)">
+            <h4>Tall Tale Trail</h4>
+            <p class="project-details blinking">Founded Newfoundland's only Tall Tale Trail — a community storytelling landmark built in collaboration with local government. Conceived, funded, and executed on a shoestring budget in a town of 450 people.</p>
+          </div>
+
+          <div class="history-card" onclick="toggleProject(this)">
+            <h4>Bed & Breakfast Owner</h4>
+            <p class="project-details blinking">Owned and operated an award winning hospitality business with five-star reviews across every major platform. Built the brand, managed operations, and created guest experiences that people actually wrote home about.</p>
+          </div>
+
+          <div class="history-card" onclick="toggleProject(this)">
+            <h4>Economic Development</h4>
+            <p class="project-details blinking">Worked alongside municipal government on community growth initiatives. Bridged the gap between residents, local business, and civic planning to move real projects forward.</p>
+          </div>
+        </section>
+
+        <section id="contact">
+            <h2  class="special-elite-regular">Contact</h2>
+            <p>Want to work together or just say hi?</p>
+        <a href="mailto:SheriEvangelene@gmail.com">SheriEvangelene@gmail.com</a>
+        </section>
+
+     </main>
+
+      <footer></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

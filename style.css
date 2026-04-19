@@ -1,0 +1,267 @@
+ /* FinalSprint
+  Sheri Evangelene
+    April 2026 */
+ 
+  
+ *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+/* :var();*/
+:root{
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+
+  --color-bg: #f2f2fa4b;
+  --color-accent: #4685a779;
+  --color-text: #05011eab;
+  --color-muted: #aaaaaaa6;
+  --color-card: #98b1bf50;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 72, 130, 0.3); /* Soft Indigo */
+    border-color: rgba(0, 54, 130, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 26, 130, 0.8); /* Deep, Glowing Aura */
+    border-color: rgba(75, 0, 130, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 72, 130, 0.3);
+    border-color: rgb(0, 54, 130, 0.5);
+  }
+}
+
+.blinking{
+   animation: blink 4s ease-in-out infinite;
+}
+
+@keyframes textBlink {
+  0%   { text-shadow: 0 0 5px (0, 72, 130, 0.3);; color: var(--color-text); }
+  50%  { text-shadow: 0 0 20px rgba(0, 26, 130, 0.8); color: rgb(0, 26, 130, 0.8); }
+  100% { text-shadow: 0 0 5px rgb(0, 72, 130, 0.3); color: var(--color-text); }
+}
+
+.text-pulse {
+    animation: textBlink 4s ease-in-out infinite;
+}
+
+
+
+
+body {
+    background-color: var(--color-bg);
+    color: #05011e6e;
+    font-family: "Courier Prime", monospace;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.text{
+    color: var( --color-text);
+}
+
+header {
+    padding: 4rem 0 2rem;
+    border-bottom: 2px solid var(--color-accent);
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--color-text);
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #05011e6e;
+    margin-top: 0.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h4 {
+    font-size: .9rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.quote{
+    margin-top: 20px;
+    color: var( --color-text);
+    font-family: "Special Elite", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.project-card {
+    background: var( --color-card);
+    border-left: 3px solid var( --color-accent);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.project-card a {
+    color: var(--color-text);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-family: "Special Elite", system-ui;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.project-details{
+    display: none;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: var( --color-accent);
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+   font-size: .85rem;
+   transition: all 0.5s ease-in-out;  
+}
+
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-card {
+    background: var(--color-card);
+    color: var( --color-text);
+    border: 1px solid var(--color-text);
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.skill-card h3 {
+    margin: 0;
+    color: var( --color-text);
+}
+
+.skill-card.active {
+    background: var( --color-accent);
+    color: var(--color-text);
+    border-color: var(--color-text);
+    font-weight: bold;
+}
+
+.skill-details {
+    display: none;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: var( --color-accent);
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: .85rem;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.history-card{
+    background: var(--color-card);
+    border-left: 3px solid var( --color-accent);
+    padding: 1.5rem;
+    margin-bottom: 1rem;    
+    cursor: pointer;
+}
+
+
+#contact a {
+    color: var(--color-text)
+}
+
+
+
+
+
+/* ==== Layout Helpers ==== */
+.row { display: flex; }
+.col { display: flex; flex-direction: column; }
+.center { display: flex; align-items: center; justify-content: center; }
+.between { display: flex; justify-content: space-between; align-items: center; }
+
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+
+/* ==== Spacing Helpers ==== */
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+
+.ml-1 { margin-left: var(--space-1); }
+.ml-2 { margin-left: var(--space-2); }
+.ml-3 { margin-left: var(--space-3); }
+
+/* ==== Reusable Bits ==== */
+.hidden { display: none; }
+
+.btn-pill {
+  border: 0;
+  border-radius: 999px;
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+}
