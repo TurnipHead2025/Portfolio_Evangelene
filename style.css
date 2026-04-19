@@ -275,3 +275,19 @@ h4 {
   padding: var(--space-2) var(--space-3);
   cursor: pointer;
 }
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .quote {
+        font-size: 0.85rem;
+    }
+}
