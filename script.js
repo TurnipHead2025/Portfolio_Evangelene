@@ -5,17 +5,18 @@
 
 // Finds skill-details class. Checks if card is open(active). Stores true/false. Closes all cards. If open close on click if closed open on click.
 function toggleSkill(card) {
-    const details = card.querySelector(".skill-details");
+    const detail = card.querySelector(".skill-details").textContent;
+    const display = document.getElementById("skill-display");
     const isOpen = card.classList.contains("active");
-    
-    document.querySelectorAll(".skill-card").forEach(c => {
-        c.classList.remove("active");
-        c.querySelector(".skill-details").style.display = "none";
-    });
+
+    document.querySelectorAll(".skill-card").forEach(c => c.classList.remove("active"));
 
     if (!isOpen) {
         card.classList.add("active");
-        details.style.display = "block";
+        display.textContent = detail;
+        display.style.display = "block";
+    } else {
+        display.style.display = "none";
     }
 }
 // Same as above but for before Code
